@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+}
+/* About Me section */
+#about-me {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#about-me .container {
+    text-align: center;
+}
+
+#about-me h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.skills, .interests {
+    margin-bottom: 30px;
+}
+
+.skills h3, .interests h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.skills ul, .interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .interests li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Hover effect on social icons */
+.social a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #007bff; /* Change to your desired hover color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+}
+
+.nav .link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav .link ul a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 600;
+    transition: all 2000ms ease-in-out;
+}
+
+
+ul a .active {
+    color: #f4637b;
+}
+
+.nav .link ul a:hover {
+    color: #f4637b;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 70px;
+
+}
+
+.main .men {
+    width: 400px;
+    transition: all 2000ms ease;
+    cursor: pointer;
+}
+
+.main .men:hover{
+    transform: scale(1.3);
+}
+
+.main .main-detil {
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.main .main-detil h1 {
+    font-size: 50px;
+
+}
+
+.main .main-detil h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main .btn button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main .btn .btn-2 {
+    padding: 8px 30px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 2000ms ease-in-out;
+
+}
+
+.main .btn .btn-2:hover {
+    background: #f4637b;
+    transform: scale(1.1);
+}
+.skills, .interests {
+    margin-bottom: 30px;
+}
+
+.skill-list, .interest-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.skill-item, .interest-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item:hover, .interest-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img, .interest-item img {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.skill-description h4, .interest-description h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-description p, .interest-description p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.social i {
+    color: #2a2a2a;
+    font-size: 40px;
+    margin: 0px 14px;
+    transition: all 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #f4637b;
+}
+
+.sub-btn a{
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/* CSS untuk halaman Work / Portfolio */
+
+
+/* Media Queries untuk responsif */
+#work {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Gaya tambahan untuk bagian Contact */
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* CSS untuk Contact Me Section */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 3000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Untuk mengatur teks menjadi rata tengah */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Mengatur agar kontak berada di tengah secara horizontal */
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px;
+    gap: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 50px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mengatur bagian Footer */
+footer {
+    background-color: #f0f0f0; /* Warna latar belakang footer */
+    padding: 20px 0; /* Padding atas dan bawah */
+    text-align: center; /* Posisi teks dan ikon di tengah */
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Posisi konten di tengah */
+}
+
+.social-icons {
+    margin-top: 10px; /* Jarak antara teks dan ikon sosial */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Jarak antara ikon sosial */
+    color: #333; /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+}
+
+/* Responsif */
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-detil {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .men {
+        width: 200px;
+    }
+
+    .btn button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .social a {
+        font-size: 1.2em;
+    }
+    /* Untuk kontak */
+#contact {
+    padding: 50px 0; /* Beri ruang atas dan bawah untuk kontak */
+}
+
+.container2 {
+    width: 90%; /* Lebar kontainer 90% dari lebar layar */
+    max-width: 600px; /* Maksimum lebar kontainer */
+    margin: 0 auto; /* Posisi tengah di layar */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Teks rata tengah */
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan konten untuk pindah baris jika tidak cukup ruang */
+    justify-content: center; /* Rata tengah horizontal */
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.contact-item {
+    flex: 1 1 250px; /* Setiap item kontak mengambil ruang 250px, fleksibel */
+    max-width: 75px; /* Maksimum lebar item kontak */
+   
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 34px;
+}
+
+.contact-item p {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
+}
+
+
+
+
+
+/* Media Queries untuk smartphone */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .link {
+        text-align: left;
+    }
+
+    .link ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+  
+
+    .main {
+        padding: 10px;
+    }
+
+    .men {
+        width: 150px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .btn button {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+
+    .social a {
+        font-size: 1em;
+        margin: 5px;
+    }
+    footer {
+        background-color: #dcd6d6;
+        padding: 20px 0; /* Beri ruang atas dan bawah untuk footer */
+        text-align: center; /* Teks rata tengah */
+    }
+    
+    .container3 {
+        max-width: 600px; /* Maksimum lebar kontainer */
+        margin: 0 auto; /* Posisi tengah di layar */
+        display: flex;
+        justify-content: space-between; /* Ratakan ikon sosial di kanan dan teks di kiri */
+        align-items: center; /* Pusatkan vertikal */
+    }
+}
